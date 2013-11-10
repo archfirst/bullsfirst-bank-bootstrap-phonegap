@@ -1,0 +1,109 @@
+/* -----------------------------------------------------------------------------
+ * tables
+ * -------------------------------------------------------------------------- */
+.table-header {
+    background-color: #808080;
+    border-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: none;
+    width: 100%;
+}
+
+.table-body {
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-header th,
+.table-body td {
+    padding: 0 5px;
+}
+
+.table-body td {
+    border-bottom: solid 1px #B2B2B2;
+}
+
+/* Following styles are required by iScroll, otherwise scroller will not work */
+.table-body-wrapper {
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Following styles are required by iScroll, otherwise scroller will not work */
+.table-body-scroller {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (max-width: 599px) {
+    /* hide priority2 and priority3 columns */
+    .priority2 { display: none; }
+    .priority3 { display: none; }
+
+    /* Table styles */
+    .table-header th {
+        font-size: 14px;
+        height: 30px;
+    }
+    .table-body td {
+        font-size: 14px;
+        height: 44px;
+    }
+
+    /* Column Widths */
+    .date {
+        width: 26%;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .amount {
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* Table styles */
+    /* Table styles */
+    .table-header th {
+        font-size: 14px;
+        height: 30px;
+    }
+    .table-body td {
+        font-size: 14px;
+        height: 44px;
+    }
+
+    /* Column Widths */
+    .date {
+        width: 14%;
+    }
+
+    .description {
+        width: 30%;
+    }
+
+    .type {
+        width: 14%;
+    }
+
+    .status {
+        width: 14%;
+    }
+
+    .amount {
+        width: 14%;
+    }
+
+    .balance {
+        width: 14%;
+    }
+}

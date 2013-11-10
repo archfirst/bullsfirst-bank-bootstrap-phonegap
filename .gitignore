@@ -1,0 +1,7 @@
+*.sublime-workspace
+.DS_Store
+.sass-cache
+node_modules
+src/css
+src/js/app/framework/AppConfig.js
+dist

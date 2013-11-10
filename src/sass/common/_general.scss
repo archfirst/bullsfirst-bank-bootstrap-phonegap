@@ -1,0 +1,19 @@
+body {
+    // required so that fixed navbar does not overlay main content
+    padding-top: 50px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Alignment
+ * -------------------------------------------------------------------------- */
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
