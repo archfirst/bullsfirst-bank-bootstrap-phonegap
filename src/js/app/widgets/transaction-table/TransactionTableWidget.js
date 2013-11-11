@@ -49,6 +49,12 @@ define(
                     this.fitTable();
                 });
 
+                // In case 'reset' happens before this widget is initialized
+                this.listenTo(MessageBus, Message.PageChange, function() {
+                    this.render();
+                    this.fitTable();
+                });
+
                 var self = this;
                 $(window).resize($.debounce(300, function() {
                     self.fitTable();

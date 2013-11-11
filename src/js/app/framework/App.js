@@ -43,7 +43,8 @@ define(
                 new Router();
 
                 // Trigger the initial route and enable HTML5 History API support
-                Backbone.history.start({ pushState: true, root: AppConfig.appRoot });
+                // pushState set to false, because PhoneGap on Android 2.2 does not support it.
+                Backbone.history.start({ pushState: false, root: AppConfig.appRoot });
 
                 /*!
                 * The following event handler modified from Backbone Boilerplate
