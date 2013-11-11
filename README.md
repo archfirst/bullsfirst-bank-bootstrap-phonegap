@@ -17,7 +17,7 @@ A mobile front-end for Bullsfirst Bank, based on Twitter Bootstrap and PhoneGap.
 *	Deposits screen: Use of the native camera API provided by PhoneGap. Also the native notifications dialog (tap on “Check Camera Support”).
 
 ## Live Demo
-*	You can download the Android version of the app to your device from [TBD]. Make sure you allow installation of non-Market applications (Menu > Settings > Applications > Unknown sources).
+*	You can download the Android version of the app to your device from [here](http://archfirst.org/sites/default/files/sources/BfBootBank.apk). Make sure you allow installation of non-Market applications (Menu > Settings > Applications > Unknown sources).
 *	You can view the web version of the app [here](http://archfirst.org/apps/bullsfirst-bank-bootstrap-phonegap/). The only difference is that it does not support the PhoneGap APIs for camera and native notifications.
 
 ## Known Issues
