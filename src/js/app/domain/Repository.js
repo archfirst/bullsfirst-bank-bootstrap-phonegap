@@ -36,6 +36,11 @@ define(
         var _accounts = new Backbone.Collection();
         var _transactions = new Backbone.Collection();
 
+        // URLs for development
+        // _accounts.url = '/bullsfirst-bank/rest/accounts';
+        // _transactions.url = '/bullsfirst-bank/rest/transactions';
+
+        // URLs for deployment
         _accounts.url = 'http://archfirst.org/bullsfirst-bank/rest/accounts';
         _transactions.url = 'http://archfirst.org/bullsfirst-bank/rest/transactions';
 
